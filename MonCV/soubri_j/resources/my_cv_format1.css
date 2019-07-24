@@ -1,0 +1,188 @@
+.btn {
+    opacity: 0.60;
+}
+
+.content {
+    height: 94vh;
+}
+
+.bg_img {
+    background-image: url("./resources/background.jpg");
+    background-repeat: repeat-y;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:100%;
+}
+
+.page {
+    color: white;
+    display: none;
+}
+
+.page:target {
+    display: block;  
+}
+
+.page_all_width {
+    color: white;
+    width: 100%;
+    display: none;
+}
+
+.page_all_width:target {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+.resume {
+    align-self: center;
+    animation-name: slide_from_top;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.resume2 {
+    align-self: center;
+    animation-name: slide_from_top_left_corner;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.photo {
+    opacity: 0.80;
+    animation-name: slide_from_left;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.card {
+    opacity: 0.75;
+    margin-top: 5em;
+    color: black;
+}
+
+.year {
+    font-size: 0.8em;
+    color: grey;
+}
+
+.mission {
+    color: black;
+}
+
+.from_bottom {
+    animation-fill-mode: forwards;
+    animation-name: slide_from_bottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    visibility: hidden;
+}
+
+.rectangle {
+    opacity: 0.60;
+    display: block;
+    background-color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;   
+}
+
+.stack {
+    color:grey;
+    font-style: italic;
+}
+
+.skill {
+    opacity: 0.70;
+    width:inherit;
+    animation-name: slide_from_top;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.skill2 {
+    opacity: 0.70;
+    width:inherit;
+    animation-name: slide_from_bottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.card {
+    animation-name: slide_from_left;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.delay1 {
+    animation-delay: 1s;
+}
+.delay2 {
+    animation-delay: 2s;
+}
+.delay3 {
+    animation-delay: 3s;
+}
+.delay4 {
+    animation-delay: 4s;
+}
+.delay5 {
+    animation-delay: 5s;
+}
+.delay6 {
+    animation-delay: 6s;
+}
+.delay7 {
+    animation-delay: 7s;
+}
+
+@keyframes slide_from_left {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX();
+        visibility: visible;
+    }
+}
+
+@keyframes slide_from_top {
+    from {
+        transform: translateY(-700%);
+    }
+    to {
+        transform: translateY();
+        visibility: visible;
+    }
+}
+
+@keyframes slide_from_bottom {
+    from {
+        transform: translateY(500%);
+    }
+    to {
+        transform: translateY();
+        visibility: visible;
+    }
+}
+
+@keyframes slide_from_top_left_corner {
+    from {
+        transform: translateX(-100%) translateY(-500%);
+    }
+    to {
+        transform: translateX() translateY();
+    }
+}
